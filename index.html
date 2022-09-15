@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <title>Bear Image Classifier</title>
+  </head>
+  <body>
+    <div class="root">
+      <header>
+        <h1>Bear Image Classifier</h1>
+      </header>
+      <div class="content-container">
+        <h3 class="content-info">
+          Please upload a picture below and press the classify button to
+          classify your image.
+        </h3>
+        <div class="input-container">
+          <label for="file-upload" class="input-button">
+            <i class="fa fa-cloud-upload"></i> UPLOAD IMAGE...
+          </label>
+          <input type="file" class="input-button" id="file-upload" />
+          <div class="input-image-container">
+            <img
+              src="https://www.kaggle.com/static/images/kernel/edit/Data_Illo@2x.png"
+              alt="Uploaded file"
+              id="image-container"
+            />
+          </div>
+          <button class="upload-button" id="classify-image-button">
+            CLASSIFY
+          </button>
+        </div>
+        <div class="output-container">
+          <div class="output-classification" id="classification-results">
+            Select an image and click the UPLOAD button.
+          </div>
+        </div>
+      </div>
+      <footer>
+        <a
+          href="https://github.com/NenoPr"
+          target="_blank"
+          rel="noreferrer noopener"
+          style="display: flex"
+        >
+          <div>Created by Neno</div>
+          <img src="GitHub-Mark-32px.png" alt="Github logo" />
+          <div>Github</div>
+        </a>
+        <div class="footer-description">
+          <div>
+            This project was made using PyTorch, fast.ai, Gradio, Hugging Face
+            and GitHub Pages
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
